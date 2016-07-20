@@ -1,0 +1,32 @@
+{% capture content %}
+
+<!-- for child pages -->
+{% if parent %}
+  <h1>{{ title }} Project Timeline</h1>
+  <ol class="timeline">
+  	{% for post in posts %}
+  	<li class="tl-node">
+  		<div class="tl-stamp">{{post.date | date: "%b %d, %Y"}}</div>
+  		<div class="tl-content">{{post.title}}</div>
+		{% for data in meta %}
+	  		<a href="{{data.value}}">View {{data.key}}</a>
+	  	{% endfor %}
+  	</li>
+  	{% endfor %}
+  </ol>
+
+{% else %}
+	I am a parent!
+
+	<ul>
+	  {% for page in pages %}
+	    <li><a href="{{page.url}}"{% if page.url == url %} class="selected"{% endif %}>{{page.title}}</a></li>
+	  {% endfor %}
+	  </ul>
+{% endif %}
+   
+{% endcapture %}
+
+
+
+{% include 'layouts/default' %}

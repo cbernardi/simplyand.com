@@ -1,0 +1,166 @@
+/* line 9, ../sass/app.scss */
+html,
+body {
+  height: 100%;
+  margin: 0; }
+
+/* line 14, ../sass/app.scss */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -30px;
+  padding: 0 0 30px; }
+
+/* line 21, ../sass/app.scss */
+.container {
+  max-width: 900px; }
+
+/* line 25, ../sass/app.scss */
+#footer {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75em;
+  font-weight: 300;
+  height: 30px;
+  padding-top: 0.7em;
+  text-align: center; }
+  /* line 35, ../sass/app.scss */
+  #footer span {
+    margin: 0 3em; }
+  /* line 39, ../sass/app.scss */
+  #footer a {
+    color: #3498db;
+    font-weight: 700; }
+
+/* line 47, ../sass/app.scss */
+nav {
+  background-color: #fafafa;
+  border-bottom: 1px solid #f7f7f7 !important; }
+  /* line 51, ../sass/app.scss */
+  nav a.navbar-brand {
+    padding-top: 1.5em; }
+  /* line 55, ../sass/app.scss */
+  nav i.ss-ampersand {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    vertical-align: sub; }
+  /* line 65, ../sass/app.scss */
+  nav ul.navbar-right li a {
+    font-size: 0.75em;
+    text-align: center; }
+    /* line 69, ../sass/app.scss */
+    nav ul.navbar-right li a i {
+      display: block;
+      font-size: 1.5em; }
+
+/* line 80, ../sass/app.scss */
+body.home {
+  background: url(/assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  /* line 87, ../sass/app.scss */
+  body.home .logo {
+    color: whitesmoke;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 7em;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 18%;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); }
+    /* line 98, ../sass/app.scss */
+    body.home .logo i {
+      font-size: 0.9em;
+      vertical-align: sub; }
+  /* line 103, ../sass/app.scss */
+  body.home .home-menu {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    margin: 4em auto;
+    text-align: center; }
+    /* line 109, ../sass/app.scss */
+    body.home .home-menu a {
+      background-color: rgba(0, 0, 0, 0.45);
+      border-radius: 3px;
+      color: whitesmoke;
+      display: inline-block;
+      margin: 0.5em auto;
+      min-width: 6.5em;
+      padding: 1em;
+      text-align: center; }
+      /* line 119, ../sass/app.scss */
+      body.home .home-menu a:hover {
+        color: #3498db;
+        font-weight: 700;
+        text-decoration: none; }
+      /* line 125, ../sass/app.scss */
+      body.home .home-menu a i {
+        display: block;
+        font-size: 3em; }
+
+/* line 135, ../sass/app.scss */
+body.writings {
+  font-family: "Open Sans", sans-serif; }
+  /* line 138, ../sass/app.scss */
+  body.writings article {
+    font-size: 16px;
+    padding: 100px 3em 1em; }
+    /* line 142, ../sass/app.scss */
+    body.writings article a.top-return {
+      display: inline-block;
+      font-size: 1.5em;
+      margin: 1em auto 2em;
+      text-align: center;
+      width: 100%; }
+      /* line 149, ../sass/app.scss */
+      body.writings article a.top-return:hover {
+        text-decoration: none; }
+    /* line 154, ../sass/app.scss */
+    body.writings article h1 {
+      font-family: "Quando", serif;
+      font-size: 5em;
+      margin-bottom: 1em;
+      text-align: center; }
+      /* line 160, ../sass/app.scss */
+      body.writings article h1 i {
+        margin-right: 0.25em;
+        vertical-align: sub; }
+    /* line 165, ../sass/app.scss */
+    body.writings article section {
+      margin-bottom: 4em; }
+      /* line 168, ../sass/app.scss */
+      body.writings article section header {
+        font-family: "Quando", serif;
+        font-size: 2em;
+        margin-bottom: 0.25em;
+        text-transform: capitalize; }
+      /* line 175, ../sass/app.scss */
+      body.writings article section span.post-date {
+        color: #c2c2c2;
+        display: inline-block;
+        font-size: 0.8em;
+        margin-bottom: 1em; }
+      /* line 182, ../sass/app.scss */
+      body.writings article section p {
+        font-size: 1.1em;
+        line-height: 1.45em;
+        margin-bottom: 1em; }
+      /* line 188, ../sass/app.scss */
+      body.writings article section ol > li {
+        list-style-type: circle;
+        margin-left: 2em;
+        padding: 0.25em 0;
+        line-height: 1.45em; }
+      /* line 195, ../sass/app.scss */
+      body.writings article section code {
+        color: #fff;
+        background-color: #333;
+        padding: 0.20em 0.5em;
+        border-radius: 0; }
+  /* line 204, ../sass/app.scss */
+  body.writings #footer {
+    background-color: #333; }

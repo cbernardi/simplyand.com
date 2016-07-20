@@ -1,0 +1,39 @@
+{% capture content %}
+<body onload="RainyDay();">
+    <div id="wrap">
+	    <div class="logo">simply <i class="ss-ampersand"></i></div>
+	    <div class="home-menu">
+	      <a href="/writings"><i class="ss-files"></i>writings</a>
+	      <a href="/bites"><i class="ss-frenchfries"></i>bites</a>
+	      <a href="http://www.flickr.com/photos/3sunset/"><i class="ss-camera"></i>photos</a>
+	      <a href="https://github.com/cbernardi"><i class="ss-code"></i>code</a>
+	      <a href="https://www.behance.net/simplyand"><i class="ss-pencilspen"></i>portfolio</a>
+	      <a href="https://twitter.com/simplyand"><i class="ss-twitter"></i>musings</a>
+	      <a href="/hello"><i class="ss-glasses"></i>say hello</a>
+	    </div>
+	</div><!-- /wrap -->
+
+	<script type="text/javascript">
+		var engine = new RainyDay({
+		    img.src: '/assets/images/bridge.jpg',         // Image element
+		                            // This value is required
+		    parentElement: body,    // Element to be used as a parent for the canvas
+		                            // If not provided assuming the 'body' element
+		    crop: [0, 0, 50, 60],   // Coordinates if only a part of the image should be used
+		                            // If not provided entire image will be used
+		    blur: 10,               // Defines blur due to rain effect
+		                            // Assuming 10 if not provided
+		                            // Use 0 value to disable the blur
+		    opacity: 1              // Opacity of rain drops
+		                            // Assuming 1 if not provided
+		});
+		engine.rain(
+		    [
+		        [1, 0, 20],         // add 20 drops of size 1...
+		        [3, 3, 1]           // ... and 1 drop of size from 3 - 6 ...
+		    ],                       
+		    100);                   // ... every 100ms
+	</script>
+{% endcapture %}
+
+{% include 'layouts/default' %}
